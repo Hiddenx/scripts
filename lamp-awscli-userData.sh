@@ -10,7 +10,6 @@ apt-get -y upgrade;
 apt-get -y install apache2 php5 php5-mysql mysql-server mysql-client unzip;
 #/usr/bin/mysqladmin -u root -h localhost password "test123";
 apt-get -y install libapache2-mod-php5 php5-mcrypt php5-curl;
-bash -c 'echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf';
 chmod 777 -R /var/www/;
 printf "<?php phpinfo(); ?>" > /var/www/html/info.php;
 service apache2 restart;
